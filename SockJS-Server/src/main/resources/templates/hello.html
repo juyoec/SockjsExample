@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'Hello, !'" />
+<textarea id="chat-content" style="width:500px;height:300px"></textarea><br/>
+<input type="text" id="username" placeholder="Choose username"/>
+<input type="text" id="message" placeholder="Enter chat message"/>
+<input type="button" value="Send" onclick="sendMessage()"/>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//cdn.jsdelivr.net/sockjs/1/sockjs.min.js"></script>
+<script src="/js/index.js" ></script>
+</body>
+</html>
